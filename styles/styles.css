@@ -151,9 +151,9 @@ nav {
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 30px;
   color: navy;
-  padding: 15px;
+  padding: 15px 20px;
 }
 
 .navbar > * {
