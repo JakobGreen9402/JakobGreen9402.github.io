@@ -6,6 +6,48 @@
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    padding-top: 80px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar > * {
+    margin: 0;
+  }
+
+  .hero {
+    margin-top: 20px;
+  }
+
+  .container {
+        width: 90%;
+  }
+
+  .about-me-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .contact-me-text {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
