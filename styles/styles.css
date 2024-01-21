@@ -6,19 +6,11 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.5rem;
-  background-color: #ddd0c8;
-  scroll-behavior: smooth;
-}
-
 @media only screen and (max-width: 600px) {
   body {
     padding-top: 80px;
   }
-
+  
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -33,7 +25,7 @@ body {
   }
 
   .container {
-    width: 90%;
+        width: 90%;
   }
 
   .about-me-content {
@@ -61,22 +53,19 @@ body {
   .hamburger {
     display: block;
   }
-
   .navbar {
     display: none;
     flex-direction: column;
-    background-color: #ddd0c8;
+    background-color: #ddd0C8;
     position: absolute;
     top: 60px;
     right: 0;
     width: 100%;
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1);
   }
-
   .navbar li {
     text-align: center;
   }
-
   .navbar li:hover {
     color: white;
     border-bottom: 5px solid white;
@@ -85,6 +74,21 @@ body {
 
 * {
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+  background-color: #ddd0c8;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 60px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
 }
 
 header {
@@ -284,6 +288,7 @@ h1 {
 
 .footer {
   text-align: center;
+  background-color: darkgray;
   padding: 20px;
   color: navy;
   font-weight: 800;
