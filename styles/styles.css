@@ -10,14 +10,24 @@
   body {
     padding-top: 80px;
   }
-  
+
   .navbar {
     flex-direction: column;
     align-items: center;
+    display: flex;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar:not(.active) {
+    display: none;
   }
 
   .navbar > * {
     margin: 0;
+    padding: 15px;
   }
 
   .hero {
@@ -25,7 +35,7 @@
   }
 
   .container {
-        width: 90%;
+    width: 90%;
   }
 
   .about-me-content {
@@ -56,7 +66,7 @@
   .navbar {
     display: none;
     flex-direction: column;
-    background-color: #ddd0C8;
+    background-color: #ddd0c8;
     position: absolute;
     top: 60px;
     right: 0;
@@ -69,6 +79,15 @@
   .navbar li:hover {
     color: white;
     border-bottom: 5px solid white;
+  }
+  .navbar.active {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar {
+    display: flex !important;
   }
 }
 
@@ -288,7 +307,6 @@ h1 {
 
 .footer {
   text-align: center;
-  background-color: darkgray;
   padding: 20px;
   color: navy;
   font-weight: 800;

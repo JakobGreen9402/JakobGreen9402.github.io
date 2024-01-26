@@ -48,12 +48,12 @@ function displayRandomQuote() {
   quoteElement.textContent = randomQuote;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  const navbar = document.querySelector('.navbar');
-  const hamburger = document.querySelector('.hamburger');
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerButton = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".navbar");
 
-  hamburger.addEventListener('click', function () {
-    navbar.style.display = navbar.style.display === 'flex' ? '' : 'flex';
+  hamburgerButton.addEventListener("click", function () {
+    navbar.style.display = navbar.style.display === "flex" ? "none" : "flex";
   });
 });
 
